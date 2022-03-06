@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Hotel Smile</title>
+  </head>
+  <body>
+    <div
+      style="
+        z-index: 100001;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f1f2f3;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+      "
+      class="loader"
+    >
+      <div class="">
+        <img src="assets/img/loader.gif" alt="" />
+        <h1 style="font-family: 'Rowdies', cursive">loading......</h1>
+      </div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Hotel Smile</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#rooms" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Rooms
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Gallery
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contace
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container">
+          <h1>Welcome Our Hotel</h1>
+          <h2>Outdoor and Indoor luxury</h2>
+          <h3>at just the right price</h3>
+          <a href="#rooms" class="home__button">View Rooms</a>
+          <form action="" class="home__form grid">
+            <input name="checkin" type="date" />
+            <input name="checkout" type="date" />
+            <a href="" class="home__form-button">Search</a>
+          </form>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Our Hotel</h2>
+        <span class="section__subtitle">Say hi</span>
+
+        <div class="about__container container grid">
+          <div class="about__img-container grid">
+            <img src="assets/img/about1.jpg" alt="" />
+            <div>
+              <img src="assets/img/about2.jpg" alt="" />
+              <img src="assets/img/about3.jpg" alt="" />
+            </div>
+            <img src="assets/img/about4.jpg" alt="" />
+          </div>
+
+          <div class="about__content">
+            <h1 class="about__content-title">Hotel Smile</h1>
+            <p class="about__content-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              inventore eum itaque quasi illo laborum maiores eveniet expedita.
+              Eveniet amet molestias quos quam reprehenderit sed quibusdam
+              dolore! Odit hic quis natus unde et ea molestias mollitia tempora,
+              nam dolorem corrupti debitis ut tenetur maiores quasi atque,
+              blanditiis dolorum praesentium ad esse recusandae fugiat aliquid
+              officiis. In at voluptatibus neque nesciunt repudiandae assumenda,
+              cumque, natus aspernatur, corrupti dolorum voluptate maxime nihil
+              doloremque. Minima necessitatibus suscipit libero sint natus, quis
+              quae nesciunt!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What We offer</span>
+
+        <div class="services__container container grid">
+          <!--==================== SERVICES 1====================-->
+          <div class="services__data">
+            <svg
+              class="services__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              baseProfile="tiny"
+              overflow="inherit"
+              version="1.2"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M49 40a7.125 7.125 0 0 1-2.952-.641 7.416 7.416 0 0 0-3.042-.664 7.467 7.467 0 0 0-3.049.664 7.123 7.123 0 0 1-5.903 0 7.545 7.545 0 0 0-3.048-.664 7.492 7.492 0 0 0-3.049.664 7.147 7.147 0 0 1-5.913 0 7.43 7.43 0 0 0-3.036-.664 7.487 7.487 0 0 0-3.048.664 7.141 7.141 0 0 1-5.912 0A7.458 7.458 0 0 0 7 38.695a7.472 7.472 0 0 0-3.037.664A7.204 7.204 0 0 1 1 40v-4.396a7.47 7.47 0 0 0 2.963-.631A7.287 7.287 0 0 1 7 34.299c1.086 0 2.127.25 3.048.674a7.398 7.398 0 0 0 2.948.631 7.42 7.42 0 0 0 2.964-.631 7.3 7.3 0 0 1 3.048-.674c1.078 0 2.114.25 3.036.674a7.44 7.44 0 0 0 2.96.631 7.407 7.407 0 0 0 2.953-.631 7.308 7.308 0 0 1 3.049-.674c1.073 0 2.113.25 3.048.674.895.393 1.9.631 2.95.631a7.377 7.377 0 0 0 2.953-.631 7.283 7.283 0 0 1 3.049-.674c1.086 0 2.125.25 3.042.674a7.38 7.38 0 0 0 2.952.631V40zm-6.952-12.436c3.152 0 5.71-2.55 5.71-5.678 0-3.131-2.558-5.668-5.71-5.668-3.157 0-5.712 2.538-5.712 5.668 0 3.128 2.328 5.678 5.712 5.678zM8.791 30.756c.443.105.861.258 1.258.436a7.255 7.255 0 0 0 2.949.641c1.05 0 2.069-.238 2.963-.641a7.463 7.463 0 0 1 3.048-.676c1.078 0 2.116.262 3.036.676a7.293 7.293 0 0 0 2.96.641c1.04 0 2.058-.238 2.952-.641a7.47 7.47 0 0 1 3.049-.676c1.074 0 2.115.262 3.048.676.896.402 1.9.641 2.952.641.765 0 1.502-.129 2.197-.346l-9.525-17.056 11.079-2.007c1.626-.308 2.806-1.576 2.806-3.199 0-1.79-1.467-3.225-3.262-3.225l-.37.011-17.114 3.092c-1.201.273-2.792 2.019-1.886 4.161l.146.345 4.466 8.003-16.752 9.144z"
+                fill=""
+                class="color000000 svgShape"
+              ></path>
+            </svg>
+            <div class="services__content">
+              <h3>Swimming Pool</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero, beatae.
+              </p>
+            </div>
+          </div>
+          <!--==================== SERVICES 2====================-->
+          <div class="services__data">
+            <svg
+              class="services__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 64 64"
+              viewBox="0 0 64 64"
+            >
+              <path
+                d="M50.97 18.06c-1.28 0-2.32 1.04-2.32 2.32v9.3H15.49v-9.3c0-1.28-1.04-2.32-2.32-2.32-1.28 0-2.32 1.04-2.32 2.32v23.24c0 1.28 1.04 2.32 2.32 2.32 1.28 0 2.32-1.04 2.32-2.32v-9.3h33.16v9.3c0 1.28 1.04 2.32 2.32 2.32 1.28 0 2.32-1.04 2.32-2.32V20.38C53.29 19.1 52.25 18.06 50.97 18.06zM56.32 23.51c-1.28 0-2.32 1.04-2.32 2.32v12.34c0 1.28 1.04 2.32 2.32 2.32 1.28 0 2.32-1.04 2.32-2.32V25.83C58.64 24.55 57.6 23.51 56.32 23.51zM61.68 25.89c-1.28 0-2.32 1.04-2.32 2.32v7.58c0 1.28 1.04 2.32 2.32 2.32 1.28 0 2.32-1.04 2.32-2.32v-7.58C64 26.93 62.96 25.89 61.68 25.89zM2.32 25.89C1.04 25.89 0 26.93 0 28.21v7.58c0 1.28 1.04 2.32 2.32 2.32 1.28 0 2.32-1.04 2.32-2.32v-7.58C4.64 26.93 3.6 25.89 2.32 25.89zM7.74 23.51c-1.28 0-2.32 1.04-2.32 2.32v12.34c0 1.28 1.04 2.32 2.32 2.32s2.32-1.04 2.32-2.32V25.83C10.06 24.55 9.03 23.51 7.74 23.51z"
+                fill="#000000"
+                class="color000000 svgShape"
+              ></path>
+            </svg>
+            <div class="services__content">
+              <h3>Gym</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero, beatae.
+              </p>
+            </div>
+          </div>
+          <!--==================== SERVICES 3====================-->
+          <div class="services__data">
+            <svg
+              class="services__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,15a3,3,0,1,0,3,3A3,3,0,0,0,12,15Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,12,19Zm0-8a7.06,7.06,0,0,0-4.95,2.05,1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0,5,5,0,0,1,7.08,0,1,1,0,0,0,.7.3A1,1,0,0,0,17,13.05,7.06,7.06,0,0,0,12,11Zm0-4a11.08,11.08,0,0,0-7.78,3.22,1,1,0,0,0,1.42,1.42,9,9,0,0,1,12.72,0,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.42A11.08,11.08,0,0,0,12,7Zm10.61.39a15,15,0,0,0-21.22,0A1,1,0,0,0,2.81,8.81a13,13,0,0,1,18.38,0,1,1,0,0,0,1.42,0A1,1,0,0,0,22.61,7.39Z"
+                fill="#000000"
+                class="color000000 svgShape"
+              ></path>
+            </svg>
+            <div class="services__content">
+              <h3>Free Wifi</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero, beatae.
+              </p>
+            </div>
+          </div>
+          <!--==================== SERVICES 4====================-->
+          <div class="services__data">
+            <svg
+              class="services__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+            >
+              <g
+                data-name="Layer 22"
+                fill="#000000"
+                class="color000000 svgShape"
+              >
+                <path
+                  d="M32,0A32,32,0,1,0,64,32,32.036,32.036,0,0,0,32,0Zm0,62A30,30,0,1,1,62,32,30.034,30.034,0,0,1,32,62Z"
+                  fill="#000000"
+                  class="color000000 svgShape"
+                ></path>
+                <path
+                  d="M41.965,34.035a11.245,11.245,0,0,0-19.93,0,11.245,11.245,0,0,0,0,19.93,11.245,11.245,0,0,0,19.93,0,11.245,11.245,0,0,0,0-19.93ZM40.783,52.321a1.014,1.014,0,0,0-.461.461,9.245,9.245,0,0,1-16.644,0,1.014,1.014,0,0,0-.461-.461,9.244,9.244,0,0,1,0-16.642,1.014,1.014,0,0,0,.461-.461,9.245,9.245,0,0,1,16.644,0,1.014,1.014,0,0,0,.461.461,9.244,9.244,0,0,1,0,16.642Z"
+                  fill="#000000"
+                  class="color000000 svgShape"
+                ></path>
+                <path
+                  d="M32 37.474A6.526 6.526 0 1 0 38.526 44 6.533 6.533 0 0 0 32 37.474zm0 11.052A4.526 4.526 0 1 1 36.526 44 4.531 4.531 0 0 1 32 48.526zM58.707 24.293l-16-16a1 1 0 0 0-1.414 0L39 10.586 32.707 4.293a1 1 0 0 0-1.414 0L25 10.586 22.707 8.293a1 1 0 0 0-1.414 0l-16 16A1 1 0 0 0 6 26H58a1 1 0 0 0 .707-1.707zM11.586 24H8.414L22 10.414 23.586 12zm2.828 0L25.707 12.707 32 6.414l6.293 6.293L49.586 24zm38 0l-12-12L42 10.414 55.586 24z"
+                  fill="#000000"
+                  class="color000000 svgShape"
+                ></path>
+              </g>
+            </svg>
+            <div class="services__content">
+              <h3>Breakfast</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero, beatae.
+              </p>
+            </div>
+          </div>
+          <!--==================== SERVICES 5====================-->
+          <div class="services__data">
+            <svg
+              class="services__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+            >
+              <g
+                data-name="Layer 1"
+                fill="#000000"
+                class="color000000 svgShape"
+              >
+                <circle
+                  cx="11"
+                  cy="47"
+                  r="6"
+                  style="mix-blend-mode: multiply"
+                  fill="#000000"
+                  class="color000000 svgShape"
+                ></circle>
+                <circle
+                  cx="53"
+                  cy="47"
+                  r="6"
+                  style="mix-blend-mode: multiply"
+                  fill="#000000"
+                  class="color000000 svgShape"
+                ></circle>
+                <path
+                  d="M59.59 35.52l-5.76-1.15a3.02083 3.02083 0 0 1-2.02356-1.47638A1.98185 1.98185 0 0 1 51.2002 33H12.7998a1.98185 1.98185 0 0 1-.60626-.10638A3.02083 3.02083 0 0 1 10.17 34.37L4.41 35.52A2.99861 2.99861 0 0 0 2 38.46V44a2.99615 2.99615 0 0 0 1.03 2.26A8.00223 8.00223 0 0 1 19 47H45a8.00223 8.00223 0 0 1 15.97-.74A2.99615 2.99615 0 0 0 62 44V38.46A2.99861 2.99861 0 0 0 59.59 35.52zM38 41H24a2 2 0 0 1 0-4H38a2 2 0 0 1 0 4zM31 19H26.76A13.989 13.989 0 0 0 13.23 29.39L12.8 31H31zM50.77 29.39A13.989 13.989 0 0 0 37.24 19H37V13a2 2 0 0 0-4 0V31H51.2z"
+                  style="mix-blend-mode: multiply"
+                  fill="#000000"
+                  class="color000000 svgShape"
+                ></path>
+              </g>
+            </svg>
+            <div class="services__content">
+              <h3>Airpord Taxi</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero, beatae.
+              </p>
+            </div>
+          </div>
+          <!--==================== SERVICES 6====================-->
+          <div class="services__data">
+            <svg
+              class="services__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              data-name="Layer 1"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M47.84,42.18a10.23,10.23,0,0,0-2.14-5.9,10.42,10.42,0,0,0-4-3.15L34.41,30l-2.15-1.26V26a10.15,10.15,0,0,0,1.52-2.74,14,14,0,0,0,.53-1.85,1.82,1.82,0,0,0,1.12-.27,1.51,1.51,0,0,0,.79-1A23.22,23.22,0,0,1,37.33,17a2.75,2.75,0,0,0,.24-.77,2.78,2.78,0,0,0-.19-1.6,2.3,2.3,0,0,0-1.33-1.28l-.37-.1.21-1.21c.54-3.36-.49-4.89-1.81-6.82l-.57-.85C31.69,1.62,27.39.47,21.69,1.23c-2.88.39-4,2.06-4.34,3.4a3.34,3.34,0,0,0-1.82.94c-2,2-1.67,6.21-1.58,7,0,.16,0,.32.05.48a1.24,1.24,0,0,0-.29.06,2.39,2.39,0,0,0-1.31,1.27A2.81,2.81,0,0,0,12.22,16a2.6,2.6,0,0,0,.22.77,10.22,10.22,0,0,1,.84,2.77l0,.15a2.35,2.35,0,0,0,1.28,1.51,2.3,2.3,0,0,0,1,.19,15.34,15.34,0,0,0,.52,1.84l.09.22h0A10.61,10.61,0,0,0,17.65,26s0,0,0,0v2.73L15.41,30l0,0L8.57,33A10.89,10.89,0,0,0,4.3,36.38a10.72,10.72,0,0,0-2.19,6.1l-.17,4.58a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1l.17-4.58a8.75,8.75,0,0,1,5.26-7.7l1.44-.63a18.77,18.77,0,0,0-.88,7.08,2.95,2.95,0,1,0,2,0c-.1-1.74-.14-6.31,2-8.45l.49-.21L14,34.06a.8.8,0,0,0,0,.15A2.3,2.3,0,0,0,14.56,36l.1.11L16,37.23l-.86,1.37a.88.88,0,0,0-.1.22,2.3,2.3,0,0,0,0,1.49,1,1,0,0,0,.44.54l8.78,5,.15.07a1,1,0,0,0,.35.06h0a1,1,0,0,0,.33,0l.15-.07,8.81-4.72a1,1,0,0,0,.47-.53,2.44,2.44,0,0,0,0-1.58L34,37.7l1.4-1.21.1-.11a2.33,2.33,0,0,0,.55-1.73l0-.17-.51-1.84,2.1.91a15.62,15.62,0,0,1,1.17,4.76,4.22,4.22,0,0,0-3.49,4,20.15,20.15,0,0,0,.93,6,1,1,0,0,0,1,.69h1a1,1,0,0,0,0-2h-.29a18.78,18.78,0,0,1-.63-4.7,2.36,2.36,0,0,1,2.53-2.1h0a2.37,2.37,0,0,1,2.53,2.16A13.7,13.7,0,0,1,41.75,47h-.14a1,1,0,0,0,0,2h.87a1,1,0,0,0,1-.69,16.08,16.08,0,0,0,.93-6,4.22,4.22,0,0,0-3.57-4,19.47,19.47,0,0,0-.66-3.64l.73.32a8.29,8.29,0,0,1,3.26,2.54,8.18,8.18,0,0,1,1.72,4.75L46.06,48a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1ZM10.91,45a1,1,0,1,1,1-1A1,1,0,0,1,10.91,45Zm17.49-18a5.59,5.59,0,0,1-6.9,0,12.53,12.53,0,0,1-2.92-3.29,22.66,22.66,0,0,0,6-2.88.46.46,0,0,1,.53.06A25.2,25.2,0,0,0,31,24.32,13.41,13.41,0,0,1,28.4,27.06Zm-8.76,1.05c.2.18.4.34.59.5a7.47,7.47,0,0,0,9.44,0c.19-.15.39-.32.59-.5V29c-1.37,2.19-3.11,3.36-5.05,3.39h-.06A7,7,0,0,1,19.64,29ZM16,19.27a.86.86,0,0,1-.56.11.42.42,0,0,1-.15-.22,12.6,12.6,0,0,0-1-3.27.5.5,0,0,1-.05-.19.87.87,0,0,1,0-.47.55.55,0,0,1,.1-.16,6,6,0,0,1,.61,0h.22a1,1,0,0,0,.76-.35,1,1,0,0,0,.23-.81c-.09-.52-.16-1-.21-1.52-.2-1.94,0-4.46,1-5.43a1.4,1.4,0,0,1,1.2-.38,1,1,0,0,0,.79-.27,1,1,0,0,0,.32-.78c0-.33.06-2,2.71-2.33,4.83-.66,8.52.2,9.88,2.27.2.31.4.6.59.88,1.22,1.81,1.9,2.8,1.48,5.38-.12.74-.25,1.48-.37,2.2a1,1,0,0,0,.29.88,1,1,0,0,0,.79.28,6.92,6.92,0,0,1,.77.16.32.32,0,0,1,.16.18v0a.81.81,0,0,1,0,.48.63.63,0,0,1-.06.2,24.18,24.18,0,0,0-1.18,3.21.85.85,0,0,1-.41-.1,1,1,0,0,0-.89,0,1,1,0,0,0-.52.72,14.17,14.17,0,0,1-.63,2.53,23.91,23.91,0,0,1-5.55-3.18,2.42,2.42,0,0,0-2.9-.11,21.34,21.34,0,0,1-5.64,2.66,16.14,16.14,0,0,1-.43-1.9,1,1,0,0,0-.52-.73,1,1,0,0,0-.47-.12A1.08,1.08,0,0,0,16,19.27ZM17,39.4,18,37.89a.91.91,0,0,0,.11-.22,1.34,1.34,0,0,0-.31-1.53L17.63,36a1.14,1.14,0,0,0-.11-.11l-1.47-1.28a.24.24,0,0,1-.05-.14l.78-2.93L18,30.81c.93,3,2.65,7,4.46,11.3l.24.57Zm7.8,3.05-.48-1.12c-1.25-3-2.47-5.83-3.39-8.26a7.79,7.79,0,0,0,4.21,1.32h.09a7,7,0,0,0,3.52-1c-.73,1.77-1.61,3.75-2.51,5.8C25.77,40.25,25.28,41.35,24.81,42.45Zm9.2-7.4-1.48,1.28-.1.1a.68.68,0,0,1-.12.12A1.38,1.38,0,0,0,32,38.16l.63,1.52-5.81,3.11c.41-.95.83-1.89,1.24-2.83,1.52-3.43,3-6.71,3.77-9.16l1.29.75.92,3.35A.44.44,0,0,1,34,35.05Z"
+                fill="#000000"
+                class="color000000 svgShape"
+              ></path>
+              <path
+                d="M20 13.82a1.54 1.54 0 0 1 2.12 0 1 1 0 1 0 1.28-1.53 3.53 3.53 0 0 0-4.77 0 1 1 0 0 0 0 1.42A1 1 0 0 0 20 13.82zM21.54 14.68a1 1 0 0 0-1 1V16a1 1 0 0 0 2 0v-.3A1 1 0 0 0 21.54 14.68zM27.25 14.09a1 1 0 0 0 .64-.23 1.54 1.54 0 0 1 2.13 0 1 1 0 0 0 1.36-1.47 3.53 3.53 0 0 0-4.77 0 1 1 0 0 0 .64 1.76zM28.51 14.68a1 1 0 0 0-1 1V16a1 1 0 0 0 2 0v-.3A1 1 0 0 0 28.51 14.68z"
+                fill="#000000"
+                class="color000000 svgShape"
+              ></path>
+            </svg>
+            <div class="services__content">
+              <h3>Clinic</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero, beatae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ROOMS ====================-->
+      <section class="rooms section" id="rooms">
+        <h2 class="section__title">Rooms</h2>
+        <span class="section__subtitle">we have best</span>
+
+        <div class="room__container container">
+          <!--==================== ROOMS ARTICLE 1====================-->
+          <article class="room">
+            <!-- room title -->
+            <div class="room-title">
+              <p>Classic Room</p>
+              <button type="button" class="room-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- room text -->
+            <div class="room-data swiper">
+              <div class="swiper-wrapper">
+                <!-- room 1 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room1.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">Classic Room1</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 2 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room2.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">Classic Room2</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 3 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room3.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">Classic Room3</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 4 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room4.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">Classic Room4</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper arrows -->
+              <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-room-icon"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-room-icon"></i>
+              </div>
+            </div>
+          </article>
+          <!--==================== ROOMS ARTICLE 2====================-->
+          <article class="room">
+            <!-- room title -->
+            <div class="room-title">
+              <p>luxury Room</p>
+              <button type="button" class="room-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- room text -->
+            <div class="room-data swiper">
+              <div class="swiper-wrapper">
+                <!-- room 1 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room1.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">luxury Room1</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 2 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room2.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">luxury Room2</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 3 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room3.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">luxury Room3</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 4 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room4.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">luxury Room4</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper arrows -->
+              <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-room-icon"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-room-icon"></i>
+              </div>
+            </div>
+          </article>
+          <!--==================== ROOMS ARTICLE 3====================-->
+          <article class="room">
+            <!-- room title -->
+            <div class="room-title">
+              <p>double Room</p>
+              <button type="button" class="room-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- room text -->
+            <div class="room-data swiper">
+              <div class="swiper-wrapper">
+                <!-- room 1 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room1.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">double Room1</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 2 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room2.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">double Room2</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 3 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room3.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">double Room3</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 4 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room4.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">double Room4</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper arrows -->
+              <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-room-icon"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-room-icon"></i>
+              </div>
+            </div>
+          </article>
+          <!--==================== ROOMS ARTICLE 4====================-->
+          <article class="room">
+            <!-- room title -->
+            <div class="room-title">
+              <p>single Room</p>
+              <button type="button" class="room-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- room text -->
+            <div class="room-data swiper">
+              <div class="swiper-wrapper">
+                <!-- room 1 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room1.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">single Room1</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 2 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room2.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">single Room2</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 3 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room3.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">single Room3</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <!-- room 4 -->
+                <div class="room__details swiper-slide">
+                  <img
+                    class="room__details-img"
+                    src="assets/img/room4.jpg"
+                    alt=""
+                  />
+                  <h1 class="room__details-title">single Room4</h1>
+                  <p class="room__details-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae iste praesentium nam id. Quam dolores quibusdam,
+                    dolor vitae voluptatem repudiandae.
+                  </p>
+                  <div class="room__details-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper arrows -->
+              <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-room-icon"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-room-icon"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== GALLERY ====================-->
+      <section class="gallery section" id="gallery">
+        <h2 class="section__title">Gallery</h2>
+
+        <div class="gallery__container container grid">
+          <img src="assets/img/gallery1.jpg" alt="" />
+          <img src="assets/img/gallery2.jpg" alt="" />
+          <img src="assets/img/gallery3.jpg" alt="" />
+          <img src="assets/img/gallery4.jpg" alt="" />
+          <img src="assets/img/gallery5.jpg" alt="" />
+          <img src="assets/img/gallery6.jpg" alt="" />
+          <img src="assets/img/gallery7.jpg" alt="" />
+          <img src="assets/img/gallery8.jpg" alt="" />
+          <img src="assets/img/gallery9.jpg" alt="" />
+          <img src="assets/img/gallery10.jpg" alt="" />
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">Our client saying</span>
+
+        <div class="testimonial__container container grid">
+          <!--==================== CLIENT 1 ====================-->
+          <div class="testimonial__data">
+            <img class="testimonial__img" src="assets/img/avatar.png" alt="" />
+            <div class="testimonial__content">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h1 class="testimonial__content-title">Jacob</h1>
+                <div
+                  class="testimonial__icon"
+                  style="color: goldenrod; margin-right: 20px"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur beatae praesentium, ducimus facere vel nobis.
+              </p>
+            </div>
+          </div>
+          <!--==================== CLIENT 2 ====================-->
+          <div class="testimonial__data">
+            <img class="testimonial__img" src="assets/img/avatar.png" alt="" />
+            <div class="testimonial__content">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h1 class="testimonial__content-title">Jacob</h1>
+                <div
+                  class="testimonial__icon"
+                  style="color: goldenrod; margin-right: 20px"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur beatae praesentium, ducimus facere vel nobis.
+              </p>
+            </div>
+          </div>
+          <!--==================== CLIENT 3 ====================-->
+          <div class="testimonial__data">
+            <img class="testimonial__img" src="assets/img/avatar.png" alt="" />
+            <div class="testimonial__content">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h1 class="testimonial__content-title">Jacob</h1>
+                <div
+                  class="testimonial__icon"
+                  style="color: goldenrod; margin-right: 20px"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur beatae praesentium, ducimus facere vel nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call</h3>
+                <span class="contact__subtitle">999-777-888</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">HotelSmile@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Peru - Lima Av. Bolivar #123</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input
+                  placeholder="eg:MgMg"
+                  type="text"
+                  class="contact__input"
+                />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input
+                  placeholder="example@gmail.com"
+                  type="email"
+                  class="contact__input"
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Phone</label>
+              <input
+                placeholder="09-222-333-444"
+                type="number"
+                class="contact__input"
+              />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea
+                placeholder="Say Something"
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer footer__bg">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <div>
+            <h1 class="footer__title">Hotel Smile</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque,
+              mollitia.
+            </p>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact</a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a href="#" target="_blank" class="footer__social">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social">
+              <i class="uil uil-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social">
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+          <div class="footer__map">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.177925606947!2d96.11659521529464!3d16.867090722040277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194f8659156b7%3A0x88e67c98b143685f!2sHotel%20Broadway!5e0!3m2!1smy!2smm!4v1646579401022!5m2!1smy!2smm"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <a href="#home" id="scroll-up" class="scrollup">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== JQUERY JS ====================-->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <script></script>
+  </body>
+</html>
