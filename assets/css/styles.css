@@ -529,7 +529,13 @@ input[name="checkout"]:after {
   color: goldenrod;
   transition: 0.3s;
 }
-.room-btn:focus-visible {
+.room-btn:focus-visible{
+  outline: none;
+}
+.room-btn span:focus-visible{
+  outline: none;
+}
+.room-btn span i:focus-visible{
   outline: none;
 }
 .room-btn:hover {
