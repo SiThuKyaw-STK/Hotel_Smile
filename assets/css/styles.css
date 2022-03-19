@@ -279,7 +279,7 @@ img {
 
 /*==================== HOME ====================*/
 .home {
-  background-image: url("../img/home.jpg");
+  background-image: url("../img/home.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -584,6 +584,11 @@ input[name="checkout"]:after {
 .swiper-room-icon {
   font-size: 2rem;
   color: var(--first-color);
+}
+
+/*==================== TESTIMONIAL ====================*/
+.gallery__container{
+  margin-top: 1rem;
 }
 
 /*==================== TESTIMONIAL ====================*/
