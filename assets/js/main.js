@@ -92,18 +92,30 @@ rooms.forEach(function(room){
 });
 
 // room swiper
-let swiper = new Swiper(".room-data", {
-    cssMode:true,
-    loop:true,
+// let swiper = new Swiper(".room-data", {
+//     cssMode:true,
+//     loop:true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     mousewheel:true,
+//     keyboard:true,
+//   });
+
+  var swiper = new Swiper(".room-data", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    mousewheel:true,
-    keyboard:true,
   });
-
-
 
 
 /*==================== DARK LIGHT THEME ====================*/ 

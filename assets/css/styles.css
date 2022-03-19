@@ -530,13 +530,13 @@ input[name="checkout"]:after {
   transition: 0.3s;
   border: none;
 }
-.room-btn:focus-visible{
+.room-btn:focus-visible {
   outline: none;
 }
-.room-btn span:focus-visible{
+.room-btn span:focus-visible {
   outline: none;
 }
-.room-btn span i:focus-visible{
+.room-btn span i:focus-visible {
   outline: none;
 }
 .room-btn:hover {
@@ -586,13 +586,15 @@ input[name="checkout"]:after {
   content: "";
 }
 .swiper-button-next {
-  right: -0.5rem;
+  right: 0.3rem;
+  top: 13.5rem;
 }
 .swiper-button-next:focus-visible {
   outline: none;
 }
 .swiper-button-prev {
-  left: -0.5rem;
+  left: 0.3rem;
+  top: 13.5rem;
 }
 .swiper-button-prev:focus-visible {
   outline: none;
@@ -601,7 +603,7 @@ input[name="checkout"]:after {
   font-size: 2rem;
   color: var(--first-color);
 }
-.swiper-room-icon:focus-visible{
+.swiper-room-icon:focus-visible {
   outline: none;
 }
 
@@ -800,6 +802,15 @@ input[name="checkout"]:after {
     font-size: 1.5rem;
   }
 
+  .swiper-button-next {
+    right: -0.4rem;
+    top: 8rem;
+  }
+  .swiper-button-prev {
+    left: -0.4rem;
+    top: 8rem;
+}
+
   .testimonial__content-first-child {
     margin-bottom: 5px;
     display: flex;
@@ -842,6 +853,14 @@ input[name="checkout"]:after {
   .swiper-room-icon {
     font-size: 2.3rem;
     color: var(--first-color);
+  }
+  .swiper-button-next {
+    right: -0.4rem;
+    top: 13.5rem;
+  }
+  .swiper-button-prev {
+    left: -0.4rem;
+    top: 13.5rem;
   }
 
   .contact__container {
@@ -955,19 +974,19 @@ input[name="checkout"]:after {
     display: inline-block;
   }
 
-  .gallery__container{
-    grid-template-columns: repeat(2,300px);
+  .gallery__container {
+    grid-template-columns: repeat(2, 300px);
     justify-content: center;
     align-items: center;
   }
 
-  .testimonial__container{
-    grid-template-columns: repeat(2,350px);
+  .testimonial__container {
+    grid-template-columns: repeat(2, 350px);
   }
 
   .footer__container {
     display: grid;
-    grid-template-columns: repeat(2,350px);
+    grid-template-columns: repeat(2, 350px);
   }
   .footer__bg {
     padding: 3rem 0 3.5rem;
@@ -986,7 +1005,7 @@ input[name="checkout"]:after {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-  .container{
+  .container {
     margin-right: auto;
     margin-left: auto;
   }
@@ -995,18 +1014,24 @@ input[name="checkout"]:after {
   .footer__container {
     padding: 0;
   }
-  
 
   .services__container {
     grid-template-columns: repeat(3, 238px);
   }
 
-  article{
+  .swiper-button-next {
+    top: 20rem;
+  }
+  .swiper-button-prev {
+    top: 20rem;
+  }
+
+  article {
     width: 800px;
   }
 
-  .gallery__container{
-    grid-template-columns: repeat(2,500px);
+  .gallery__container {
+    grid-template-columns: repeat(2, 500px);
   }
 
   .contact__form {
