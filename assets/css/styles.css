@@ -528,6 +528,7 @@ input[name="checkout"]:after {
   cursor: pointer;
   color: goldenrod;
   transition: 0.3s;
+  border: none;
 }
 .room-btn:focus-visible{
   outline: none;
