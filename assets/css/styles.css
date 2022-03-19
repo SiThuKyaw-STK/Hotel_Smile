@@ -594,6 +594,9 @@ input[name="checkout"]:after {
   font-size: 2rem;
   color: var(--first-color);
 }
+.swiper-room-icon:focus-visible{
+  outline: none;
+}
 
 /*==================== TESTIMONIAL ====================*/
 .gallery__container {
